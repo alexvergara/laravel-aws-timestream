@@ -29,6 +29,16 @@ return [
     'debug_query' => env('TIMESTREAM_DEBUG_QUERY', false),
 
     /**
+     * Version
+     */
+    'version' => env('AWS_TIMESTREAM_VERSION', 'latest'),
+
+    /**
+     * AWS Region latest
+     */
+    'region' => env('AWS_TIMESTREAM_REGION', 'us-east-1'),
+
+    /**
      * Contains list of tables to access your Timestream database
      */
     'tables' => [

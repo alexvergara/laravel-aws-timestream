@@ -6,10 +6,10 @@
 AWS Timestream is a fast, scalable, and serverless time series database service.
 This package is an opinionated implementation to query timestream and ingest data into timestream.
 
-It provides a query builder class which has common timeseries sql function. This was inspired by Laravel Eloquent ORM. 
+It provides a query builder class which has common timeseries sql function. This was inspired by Laravel Eloquent ORM.
 See supported query functions `NorbyBaru\AwsTimestream\Contract\QueryBuilderContract`
 
-It also provide a payload builder class to format your data correctly to ingest into timestream. 
+It also provide a payload builder class to format your data correctly to ingest into timestream.
 See `NorbyBaru\AwsTimestream\Contract\PayloadBuilderContract`
 
 ## Install
@@ -28,6 +28,8 @@ php artisan vendor:publish --provider="NorbyBaru\AwsTimestream\TimestreamService
 AWS_TIMESTREAM_KEY=
 AWS_TIMESTREAM_SECRET=
 AWS_TIMESTREAM_PROFILE=
+AWS_TIMESTREAM_VERSION=
+AWS_TIMESTREAM_REGION=
 ```
 
 ## Basic Usage
@@ -51,7 +53,7 @@ public function overview(TimestreamService $timestreamService)
         ->whereAgo('time', '24h', '>=')
         ->whereNotIn('measure_value::varchar', ['reviewer', 'open', 'closed'])
         ->orderBy('time', 'desc');
-    
+
     TimestreamReaderDto::make($queryBuilder);
 
     // response from Aws timestream
@@ -74,7 +76,7 @@ public function overview(TimestreamService $timestreamService)
         ->whereAgo('time', '24h', '>=')
         ->whereNotIn('measure_value::varchar', ['reviewer', 'open', 'closed'])
         ->orderBy('time', 'desc');
-    
+
     TimestreamReaderDto::make($queryBuilder, 'table-name');
 
     // response from Aws timestream
