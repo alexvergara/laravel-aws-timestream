@@ -1,5 +1,5 @@
 {
-  "name": "avergara/laravel-aws-timestream",
+  "name": "alexvergara/laravel-aws-timestream",
   "description": "Fork from Norbybaru - Library to interact with AWS Timestream service via API - Downgrade for Laravel6 + PHP7 - Fixes for AWS Config",
   "keywords": [
     "aws timestream",
