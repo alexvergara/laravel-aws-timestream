@@ -25,7 +25,7 @@ class TimestreamServiceProvider extends ServiceProvider
                 config('timestream.secret'),
                 config('timestream.profile'),
                 config('timestream.version'),
-                config('timestream.region'),
+                config('timestream.region')
             );
         });
     }
