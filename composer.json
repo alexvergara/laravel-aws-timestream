@@ -13,24 +13,24 @@
   "extra": {
     "laravel": {
       "providers": [
-        "NorbyBaru\\AwsTimestream\\TimestreamServiceProvider"
+        "AlexVergara\\AwsTimestream\\TimestreamServiceProvider"
       ]
     }
   },
   "autoload": {
     "psr-4": {
-      "NorbyBaru\\AwsTimestream\\": "src/"
+      "AlexVergara\\AwsTimestream\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "NorbyBaru\\AwsTimestream\\Tests\\": "tests/"
+      "AlexVergara\\AwsTimestream\\Tests\\": "tests/"
     }
   },
   "authors": [
     {
-      "name": "Norby Baruani",
-      "email": "norby.baruani@gmail.com",
+      "name": "Alex Vergara",
+      "email": "alex.vergara@gmail.com",
       "role": "Developer"
     }
   ],

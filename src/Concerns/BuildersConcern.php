@@ -1,9 +1,9 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream\Concerns;
+namespace AlexVergara\AwsTimestream\Concerns;
 
 use Illuminate\Support\Str;
-use NorbyBaru\AwsTimestream\Builder\Builder;
+use AlexVergara\AwsTimestream\Builder\Builder;
 
 trait BuildersConcern
 {

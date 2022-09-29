@@ -1,6 +1,6 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream\Builder;
+namespace AlexVergara\AwsTimestream\Builder;
 
 class TimestreamQueryBuilder extends Builder
 {

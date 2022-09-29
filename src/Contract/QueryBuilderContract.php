@@ -1,9 +1,9 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream\Contract;
+namespace AlexVergara\AwsTimestream\Contract;
 
 use Closure;
-use NorbyBaru\AwsTimestream\Builder\Builder;
+use AlexVergara\AwsTimestream\Builder\Builder;
 
 interface QueryBuilderContract
 {

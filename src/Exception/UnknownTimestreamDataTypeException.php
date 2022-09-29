@@ -1,6 +1,6 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream\Exception;
+namespace AlexVergara\AwsTimestream\Exception;
 
 use Exception;
 

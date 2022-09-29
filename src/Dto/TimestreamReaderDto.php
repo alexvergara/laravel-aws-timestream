@@ -1,8 +1,8 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream\Dto;
+namespace AlexVergara\AwsTimestream\Dto;
 
-use NorbyBaru\AwsTimestream\Builder\Builder;
+use AlexVergara\AwsTimestream\Builder\Builder;
 
 final class TimestreamReaderDto extends AbstractTimestreamDto
 {

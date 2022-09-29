@@ -1,10 +1,10 @@
 <?php
 
-namespace NorbyBaru\AwsTimestream;
+namespace AlexVergara\AwsTimestream;
 
 use Illuminate\Support\ServiceProvider;
-use NorbyBaru\AwsTimestream\Builder\PayloadBuilder;
-use NorbyBaru\AwsTimestream\Contract\PayloadBuilderContract;
+use AlexVergara\AwsTimestream\Builder\PayloadBuilder;
+use AlexVergara\AwsTimestream\Contract\PayloadBuilderContract;
 
 class TimestreamServiceProvider extends ServiceProvider
 {
