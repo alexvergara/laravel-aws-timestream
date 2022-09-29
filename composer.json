@@ -1,53 +1,58 @@
 {
-    "name": "norbybaru/laravel-aws-timestream",
-    "description": "Library to interact with AWS Timestream service via API",
-    "keywords": ["aws timestream", "laravel aws timestream", "laravel timeseries db", "timeseries db"],
-    "type": "library",
-    "homepage": "https://github.com/norbybaru/laravel-aws-timestream",
-    "license": "MIT",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "NorbyBaru\\AwsTimestream\\TimestreamServiceProvider"
-            ]
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "NorbyBaru\\AwsTimestream\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "NorbyBaru\\AwsTimestream\\Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Norby Baruani",
-            "email": "norby.baruani@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "illuminate/support": "^8.0|^9.0",
-        "aws/aws-sdk-php": "^3.209"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "phpunit"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "require-dev": {
-        "guzzlehttp/guzzle": "^7.4",
-        "nunomaduro/larastan": "^1.0|^2.0",
-        "orchestra/testbench": "^6.24|^7.0",
-        "phpunit/phpunit": "^9.5",
-        "vlucas/phpdotenv": "^5.4"
+  "name": "avergara/laravel-aws-timestream",
+  "description": "Fork from Norbybaru - Library to interact with AWS Timestream service via API - Downgrade for Laravel6 + PHP7 - Fixes for AWS Config",
+  "keywords": [
+    "aws timestream",
+    "laravel aws timestream",
+    "laravel timeseries db",
+    "timeseries db"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/norbybaru/laravel-aws-timestream",
+  "license": "MIT",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NorbyBaru\\AwsTimestream\\TimestreamServiceProvider"
+      ]
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "NorbyBaru\\AwsTimestream\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NorbyBaru\\AwsTimestream\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Norby Baruani",
+      "email": "norby.baruani@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "illuminate/support": "^5.6",
+    "aws/aws-sdk-php": "^3.209"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "analyse": "vendor/bin/phpstan analyse",
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^7.4",
+    "nunomaduro/larastan": "^1.0|^2.0",
+    "orchestra/testbench": "^6.24|^7.0",
+    "phpunit/phpunit": "^9.5",
+    "vlucas/phpdotenv": "^5.4"
+  }
 }
